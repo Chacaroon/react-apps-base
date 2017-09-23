@@ -11,7 +11,7 @@ const extractTextPlugin = new ExtractTextPlugin({
 
 module.exports = {
     entry: [
-        './src/index.js'
+        './src/index.jsx'
     ]
 
     , output: {
