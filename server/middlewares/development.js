@@ -10,8 +10,8 @@ const logger = require('morgan')
 const compiler = webpack(webpackConfig)
 
 app.use(webpackDevMiddleware(compiler, {
-    publicPath: webpackConfig.output.publicPath,
-    stats: 'errors-only'
+	publicPath: webpackConfig.output.publicPath,
+	stats: 'minimum'
 }))
 app.use(webpackHotMiddleware(compiler))
 app.use(logger('dev'))
