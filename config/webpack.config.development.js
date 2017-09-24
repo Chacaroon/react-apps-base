@@ -8,7 +8,7 @@ const baseConfig = require('./webpack.config.common')
 module.exports = Object.assign({}, baseConfig, {
 	entry: ([
 		'react-hot-loader/patch',
-		`webpack-hot-middleware/client?http://localhost:${process.env.PORT}&reload=true`
+		`webpack-hot-middleware/client?http://localhost:${process.env.PORT}&reload=false`
 	]).concat(baseConfig.entry),
 	output: Object.assign({}, baseConfig.output, {
 		hotUpdateMainFilename: 'hot-update.[hash:6].json',
