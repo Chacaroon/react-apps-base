@@ -58,7 +58,12 @@ module.exports = {
 					}
 						, {
 						loader: 'postcss-loader',
-						options: {sourceMap: IS_DEV}
+						options: {
+							sourceMap: IS_DEV
+							, config: {
+								path: './config/postcss.config.js'
+							}
+						}
 					}]
 				})
 			}]
