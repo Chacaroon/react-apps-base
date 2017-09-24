@@ -18,5 +18,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(require('./middlewares/errors-handler'))
+app.use(require('./routes'))
 
 module.exports = app
